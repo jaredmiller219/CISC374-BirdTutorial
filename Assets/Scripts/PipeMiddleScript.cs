@@ -1,6 +1,4 @@
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 
 public class PipeMiddleScript : MonoBehaviour
 {
@@ -9,7 +7,7 @@ public class PipeMiddleScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        logic = GameObject.Find("Logic").GetComponent<GameStateManager>();
+        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<GameStateManager>();
     }
 
     // Update is called once per frame
@@ -18,8 +16,10 @@ public class PipeMiddleScript : MonoBehaviour
 
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        logic.AddScore();
+        if (collision.gameObject.layer == 3){
+            logic.AddScore(1);
+        }
     }
 }

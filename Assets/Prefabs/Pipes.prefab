@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ad7665c569b24006ac36f2e552e08f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 5
   deadSpace: -45
 --- !u!61 &740793834813837833
 BoxCollider2D:
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ad7665c569b24006ac36f2e552e08f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 5
   deadSpace: -45
 --- !u!61 &6169244253830571098
 BoxCollider2D:
@@ -375,7 +375,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 5, y: 18}
+  m_Size: {x: 2, y: 18}
   m_EdgeRadius: 0
 --- !u!114 &5387970700572778388
 MonoBehaviour:
@@ -389,6 +389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c42d0f6779b1d4cf9982762adf1fd33f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  logic: {fileID: 0}
 --- !u!1 &7502390016147412517
 GameObject:
   m_ObjectHideFlags: 0

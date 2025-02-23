@@ -3,16 +3,16 @@ using UnityEngine.UI;
 
 public class GameStateManager : MonoBehaviour
 {
-    private int pointsScored = 0;
+    public int pointsScored;
 
     public Text scoreText;
 
     [ContextMenu("Increase Score")]
 
-    public void AddScore()
+    public void AddScore(int scoreToAdd)
     {
-        pointsScored++;
-        // Debug.Log("Points scored: " + pointsScored);
+        pointsScored = pointsScored + scoreToAdd;
+        Debug.Log("Points scored: " + pointsScored);
         scoreText.text = pointsScored.ToString();
     }
 }
