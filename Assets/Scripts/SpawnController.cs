@@ -16,22 +16,28 @@ public class SpawnController : MonoBehaviour
     // The highest offset from the center of the screen
     public float highestOffset = 10;
 
+    private GameStateManager gameState;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Instantiate(PipesSpawner, transform.position, transform.rotation);
+        gameState = GameObject.FindGameObjectWithTag("Logic").GetComponent<GameStateManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (timer < spawnTime)
+        if (!gameState.isGameOver)
         {
-            timer += Time.deltaTime;
-        }
-        else {
-            spawnPipes();
-            timer = 0.0f;
+            if (timer < spawnTime)
+            {
+                timer += Time.deltaTime;
+            }
+            else {
+                spawnPipes();
+                timer = 0.0f;
+            }
         }
     }
 

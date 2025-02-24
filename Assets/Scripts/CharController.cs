@@ -27,6 +27,12 @@ public class CharController : MonoBehaviour
         {
             jump();
         }
+
+        if (transform.position.y > 17 || transform.position.y < -17)
+        {
+            logic.gameOver();
+            isAlive = false;
+        }
     }
 
     void jump(){
