@@ -1,26 +1,31 @@
 using UnityEngine;
 
-
 public class CharController : MonoBehaviour
 {
-    // This is a reference to the player GameObject
     public GameObject player;
-
-    // This is the jump force that will be applied to the player
     public float jumpForce = 10;
-
-    // This is a reference to the GameStateManager script
     public GameStateManager logic;
-
     public bool isAlive = true;
+    public AudioClip jumpSound;
+    public AudioSource audioSource;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<GameStateManager>();
+        if (GetComponent<AudioSource>() == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+        else
+        {
+            audioSource = GetComponent<AudioSource>();
+        }
+
+        audioSource.volume = 0.3f;
+        audioSource.playOnAwake = false;
+        audioSource.spatialBlend = 0f;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) && isAlive == true)
@@ -37,11 +42,20 @@ public class CharController : MonoBehaviour
 
     void jump(){
         player.GetComponent<Rigidbody2D>().linearVelocity = Vector2.up * jumpForce;
+        PlaySound(jumpSound, 0.3f);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         logic.gameOver();
         isAlive = false;
+    }
+
+    void PlaySound(AudioClip clip, float volumeScale = 0.5f)
+    {
+        if (audioSource != null && clip != null)
+        {
+            audioSource.PlayOneShot(clip, volumeScale);
+        }
     }
 }

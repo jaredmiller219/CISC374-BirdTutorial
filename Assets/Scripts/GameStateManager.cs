@@ -12,12 +12,32 @@ public class GameStateManager : MonoBehaviour
 
     public bool isGameOver = false;
 
+    public AudioClip deathSound;
+
+    private AudioSource audioSource;
+
+    void Start()
+    {
+        if (GetComponent<AudioSource>() == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+        else
+        {
+            audioSource = GetComponent<AudioSource>();
+        }
+
+        audioSource.volume = 0.3f;
+        audioSource.playOnAwake = false;
+        audioSource.spatialBlend = 0f;
+    }
+
     [ContextMenu("Increase Score")]
 
     public void AddScore(int scoreToAdd)
     {
         pointsScored = pointsScored + scoreToAdd;
-        // Debug.Log("Points scored: " + pointsScored);
+        Debug.Log("Points scored: " + pointsScored);
         scoreText.text = pointsScored.ToString();
     }
 
@@ -33,5 +53,9 @@ public class GameStateManager : MonoBehaviour
     {
         gameOverScreen.SetActive(true);
         isGameOver = true;
+        if (audioSource != null && deathSound != null)
+        {
+            audioSource.PlayOneShot(deathSound, 0.4f);
+        }
     }
 }

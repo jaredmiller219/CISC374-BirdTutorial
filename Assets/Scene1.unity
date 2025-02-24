@@ -546,6 +546,8 @@ MonoBehaviour:
   jumpForce: 10
   logic: {fileID: 0}
   isAlive: 1
+  jumpSound: {fileID: 8300000, guid: ebdf8620699dd481fad8189300a1f184, type: 3}
+  audioSource: {fileID: 0}
 --- !u!58 &666808337
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -762,6 +764,8 @@ MonoBehaviour:
   pointsScored: 0
   scoreText: {fileID: 2128196618}
   gameOverScreen: {fileID: 1168973264}
+  isGameOver: 0
+  deathSound: {fileID: 8300000, guid: 3bc0e5d4df6204bc8b701532607f7726, type: 3}
 --- !u!1 &1164545088
 GameObject:
   m_ObjectHideFlags: 0
