@@ -20,10 +20,6 @@ public class CharController : MonoBehaviour
         {
             audioSource = GetComponent<AudioSource>();
         }
-
-        audioSource.volume = 0.3f;
-        audioSource.playOnAwake = false;
-        audioSource.spatialBlend = 0f;
     }
 
     void Update()

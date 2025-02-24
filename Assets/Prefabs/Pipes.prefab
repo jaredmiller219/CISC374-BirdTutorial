@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5408633803038545086}
   - component: {fileID: 7544522065917762981}
-  - component: {fileID: 1927331821330503769}
   - component: {fileID: 740793834813837833}
   m_Layer: 0
   m_Name: TopPipe
@@ -89,20 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1927331821330503769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309302691094182338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad7665c569b24006ac36f2e552e08f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadSpace: -45
 --- !u!61 &740793834813837833
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -159,7 +144,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4991837837028450347}
   - component: {fileID: 6891475178481847037}
-  - component: {fileID: 8571157156336469704}
   - component: {fileID: 6169244253830571098}
   m_Layer: 0
   m_Name: BottomPipe
@@ -238,20 +222,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8571157156336469704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4553020492953761647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ad7665c569b24006ac36f2e552e08f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadSpace: -45
 --- !u!61 &6169244253830571098
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -399,6 +369,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6533579599770498226}
+  - component: {fileID: 8286259355604191437}
   m_Layer: 0
   m_Name: Pipes
   m_TagString: Untagged
@@ -424,3 +395,17 @@ Transform:
   - {fileID: 6374522794077362529}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8286259355604191437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7502390016147412517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad7665c569b24006ac36f2e552e08f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  deadSpace: -40
