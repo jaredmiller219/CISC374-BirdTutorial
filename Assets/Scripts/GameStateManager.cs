@@ -26,10 +26,6 @@ public class GameStateManager : MonoBehaviour
         {
             audioSource = GetComponent<AudioSource>();
         }
-
-        audioSource.volume = 0.3f;
-        audioSource.playOnAwake = false;
-        audioSource.spatialBlend = 0f;
     }
 
     [ContextMenu("Increase Score")]

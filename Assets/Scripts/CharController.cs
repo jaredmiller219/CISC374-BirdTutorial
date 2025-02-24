@@ -35,6 +35,7 @@ public class CharController : MonoBehaviour
 
         if (transform.position.y > 17 || transform.position.y < -17)
         {
+            Destroy(gameObject);
             logic.gameOver();
             isAlive = false;
         }
@@ -48,6 +49,7 @@ public class CharController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         logic.gameOver();
+        Destroy(gameObject);
         isAlive = false;
     }
 

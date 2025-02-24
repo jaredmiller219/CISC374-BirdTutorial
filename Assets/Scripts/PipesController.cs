@@ -7,7 +7,7 @@ public class PipesController : MonoBehaviour
     public float moveSpeed = 5;
 
     // This is the position where the pipe will be destroyed
-    public float deadSpace = -15f; // Changed from int to float and adjusted value
+    public float deadSpace = -40; // Changed from int to float and adjusted value
 
     // This is a reference to the GameStateManager script
     private GameStateManager gameState;
