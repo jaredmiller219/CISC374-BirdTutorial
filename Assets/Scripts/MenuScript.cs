@@ -7,4 +7,9 @@ public class MenuScript : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("Game");
     }
+
+    public void quitGame()
+    {
+        Application.Quit();
+    }
 }
