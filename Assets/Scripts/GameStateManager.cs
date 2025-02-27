@@ -41,7 +41,7 @@ public class GameStateManager : MonoBehaviour
 
         bgMusicSource.clip = gameMusic;
         bgMusicSource.loop = true;
-        // bgMusicSource.Play();
+        bgMusicSource.Play();
 
     }
 
