@@ -28,6 +28,14 @@ public class GameStateManager : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) && !isGameOver)
+        {
+            LoadMenu();
+        }
+    }
+
     [ContextMenu("Increase Score")]
 
     public void AddScore(int scoreToAdd)
@@ -53,5 +61,10 @@ public class GameStateManager : MonoBehaviour
         {
             audioSource.PlayOneShot(deathSound, 0.4f);
         }
+    }
+
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene("Menu"); // Make sure your menu scene is named "MenuScene"
     }
 }

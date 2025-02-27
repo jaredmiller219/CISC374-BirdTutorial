@@ -437,7 +437,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 50
+  m_Mass: 30
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 2.5
@@ -758,9 +758,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Game Over
-
-'
+  m_Text: Imagine Dying...
 --- !u!222 &1164545091
 CanvasRenderer:
   m_ObjectHideFlags: 0
