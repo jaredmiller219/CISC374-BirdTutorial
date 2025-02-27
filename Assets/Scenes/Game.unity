@@ -448,8 +448,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 370}
-  m_SizeDelta: {x: 400, y: 100}
+  m_AnchoredPosition: {x: 0, y: 400}
+  m_SizeDelta: {x: 500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &324905516
 MonoBehaviour:
@@ -498,14 +498,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 70
+  m_fontSizeBase: 70
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 32
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -899,11 +899,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointsScored: 0
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 1178169216}
   gameOverScreen: {fileID: 1168973264}
   isGameOver: 0
   deathSound: {fileID: 8300000, guid: 3bc0e5d4df6204bc8b701532607f7726, type: 3}
   scoreSound: {fileID: 8300000, guid: 2e99c5a67a94e4b08911b81e81cd5c9e, type: 3}
+  pipeCollisionSound: {fileID: 8300000, guid: 91341297274c94fca86e450b6ac20425, type: 3}
   gameMusic: {fileID: 8300000, guid: dc6babba07f1a4b62adf7e366ab57b01, type: 3}
   highScoreText: {fileID: 324905516}
 --- !u!1 &1164545088
@@ -1037,7 +1038,7 @@ GameObject:
   - component: {fileID: 1178169217}
   - component: {fileID: 1178169216}
   m_Layer: 5
-  m_Name: ScoreTitle
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1059,7 +1060,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -748, y: 394}
+  m_AnchoredPosition: {x: -750, y: 400}
   m_SizeDelta: {x: 400, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1178169216
@@ -1089,13 +1090,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 80
-    m_Alignment: 3
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Score:'
+  m_Text: 'Score: 0'
 --- !u!222 &1178169217
 CanvasRenderer:
   m_ObjectHideFlags: 0
