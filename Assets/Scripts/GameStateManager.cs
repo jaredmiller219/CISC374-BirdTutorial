@@ -14,6 +14,8 @@ public class GameStateManager : MonoBehaviour
 
     public AudioClip deathSound;
 
+    public AudioClip scoreSound;
+
     private AudioSource audioSource;
 
     void Start()
@@ -41,8 +43,8 @@ public class GameStateManager : MonoBehaviour
     public void AddScore(int scoreToAdd)
     {
         pointsScored = pointsScored + scoreToAdd;
-        Debug.Log("Points scored: " + pointsScored);
         scoreText.text = pointsScored.ToString();
+        audioSource.PlayOneShot(scoreSound, 0.4f);
     }
 
     public void restartGame()
@@ -65,6 +67,6 @@ public class GameStateManager : MonoBehaviour
 
     public void LoadMenu()
     {
-        SceneManager.LoadScene("Menu"); // Make sure your menu scene is named "MenuScene"
+        SceneManager.LoadScene("Menu");
     }
 }

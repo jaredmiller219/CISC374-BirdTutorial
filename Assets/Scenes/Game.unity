@@ -688,6 +688,7 @@ MonoBehaviour:
   gameOverScreen: {fileID: 1168973264}
   isGameOver: 0
   deathSound: {fileID: 8300000, guid: 3bc0e5d4df6204bc8b701532607f7726, type: 3}
+  scoreSound: {fileID: 8300000, guid: 2e99c5a67a94e4b08911b81e81cd5c9e, type: 3}
 --- !u!1 &1164545088
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,7 +818,7 @@ GameObject:
   - component: {fileID: 1178169217}
   - component: {fileID: 1178169216}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: ScoreTitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1338,7 +1339,7 @@ GameObject:
   - component: {fileID: 2128196619}
   - component: {fileID: 2128196618}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: ScoreCount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
