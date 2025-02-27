@@ -45,6 +45,15 @@ public class GameStateManager : MonoBehaviour
         pointsScored = pointsScored + scoreToAdd;
         scoreText.text = pointsScored.ToString();
         audioSource.PlayOneShot(scoreSound, 0.4f);
+        checkHighScore();
+    }
+
+    public void checkHighScore()
+    {
+        if (pointsScored > PlayerPrefs.GetInt("HighScore", 0))
+        {
+            PlayerPrefs.SetInt("HighScore", pointsScored);
+        }
     }
 
     public void restartGame()
