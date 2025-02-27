@@ -566,7 +566,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &616363863
 Transform:
   m_ObjectHideFlags: 0
@@ -1033,6 +1033,7 @@ MonoBehaviour:
   isGameOver: 0
   deathSound: {fileID: 8300000, guid: 3bc0e5d4df6204bc8b701532607f7726, type: 3}
   scoreSound: {fileID: 8300000, guid: 2e99c5a67a94e4b08911b81e81cd5c9e, type: 3}
+  gameMusic: {fileID: 8300000, guid: dc6babba07f1a4b62adf7e366ab57b01, type: 3}
   highScoreText: {fileID: 324905516}
 --- !u!1 &1164545088
 GameObject:

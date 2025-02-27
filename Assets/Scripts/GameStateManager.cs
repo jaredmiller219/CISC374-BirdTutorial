@@ -19,6 +19,10 @@ public class GameStateManager : MonoBehaviour
 
     private AudioSource audioSource;
 
+    private AudioSource bgMusicSource;
+
+    public AudioClip gameMusic;
+
     public TextMeshProUGUI highScoreText;
 
     void Start()
@@ -27,11 +31,17 @@ public class GameStateManager : MonoBehaviour
         if (GetComponent<AudioSource>() == null)
         {
             audioSource = gameObject.AddComponent<AudioSource>();
+            bgMusicSource = gameObject.AddComponent<AudioSource>();
         }
         else
         {
             audioSource = GetComponent<AudioSource>();
+            bgMusicSource = GetComponent<AudioSource>();
         }
+
+        bgMusicSource.clip = gameMusic;
+        bgMusicSource.loop = true;
+        bgMusicSource.Play();
     }
 
     void Update()
@@ -81,6 +91,7 @@ public class GameStateManager : MonoBehaviour
         {
             audioSource.PlayOneShot(deathSound, 0.4f);
         }
+        bgMusicSource.Stop();
     }
 
     public void LoadMenu()
