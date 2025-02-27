@@ -7,7 +7,7 @@ public class PipesController : MonoBehaviour
     public float moveSpeed = 5;
 
     // This is the position where the pipe will be destroyed
-    public int deadSpace = -40; // Changed from int to float and adjusted value
+    public float deadSpace = -40; // Changed from int to float and adjusted value
 
     // This is a reference to the GameStateManager script
     private GameStateManager gameState;
@@ -29,10 +29,10 @@ public class PipesController : MonoBehaviour
 
         if (!gameState.isGameOver)
         {
-            gameObject.transform.position = transform.position + ((Vector3.left * moveSpeed) * Time.deltaTime);
+            transform.position = transform.position + ((Vector3.left * moveSpeed) * Time.deltaTime);
         }
 
-        if (transform.position.x < deadSpace)
+        if (gameObject.transform.position.x < deadSpace)
         {
             Destroy(gameObject);
         }
