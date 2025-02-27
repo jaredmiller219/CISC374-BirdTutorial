@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameStateManager : MonoBehaviour
 {
@@ -18,8 +19,11 @@ public class GameStateManager : MonoBehaviour
 
     private AudioSource audioSource;
 
+    public TextMeshProUGUI highScoreText;
+
     void Start()
     {
+        updateHighScoreText();
         if (GetComponent<AudioSource>() == null)
         {
             audioSource = gameObject.AddComponent<AudioSource>();
@@ -54,6 +58,11 @@ public class GameStateManager : MonoBehaviour
         {
             PlayerPrefs.SetInt("HighScore", pointsScored);
         }
+    }
+
+    public void updateHighScoreText()
+    {
+        highScoreText.text = $"High Score: {PlayerPrefs.GetInt("HighScore", 0)}";
     }
 
     public void restartGame()
