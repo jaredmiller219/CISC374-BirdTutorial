@@ -42,6 +42,7 @@ public class GameStateManager : MonoBehaviour
         bgMusicSource.clip = gameMusic;
         bgMusicSource.loop = true;
         bgMusicSource.Play();
+
     }
 
     void Update()
@@ -56,8 +57,8 @@ public class GameStateManager : MonoBehaviour
 
     public void AddScore(int scoreToAdd)
     {
-        pointsScored = pointsScored + scoreToAdd;
-        scoreText.text = pointsScored.ToString();
+        pointsScored += scoreToAdd;
+        scoreText.text = $"Score: {pointsScored}";
         audioSource.PlayOneShot(scoreSound, 0.4f);
         checkHighScore();
     }
