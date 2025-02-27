@@ -92,6 +92,7 @@ public class GameStateManager : MonoBehaviour
             audioSource.PlayOneShot(deathSound, 0.4f);
         }
         bgMusicSource.Stop();
+        updateHighScoreText();
     }
 
     public void LoadMenu()
