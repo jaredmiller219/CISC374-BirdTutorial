@@ -25,6 +25,8 @@ public class GameStateManager : MonoBehaviour
 
     public TextMeshProUGUI highScoreText;
 
+    public float globalPipeSpeed = 5f;
+
     void Start()
     {
         updateHighScoreText();

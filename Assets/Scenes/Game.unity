@@ -906,6 +906,7 @@ MonoBehaviour:
   scoreSound: {fileID: 8300000, guid: 2e99c5a67a94e4b08911b81e81cd5c9e, type: 3}
   gameMusic: {fileID: 8300000, guid: dc6babba07f1a4b62adf7e366ab57b01, type: 3}
   highScoreText: {fileID: 324905516}
+  globalPipeSpeed: 5
 --- !u!1 &1164545088
 GameObject:
   m_ObjectHideFlags: 0
@@ -1361,8 +1362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PipesSpawner: {fileID: 7502390016147412517, guid: 27d8773433a83409c9a02fec97439f15, type: 3}
-  baseSpawnTime: 3
-  minSpawnTime: 2
+  baseSpawnTime: 4
   highestOffset: 10
 --- !u!1 &1334510431
 GameObject:
