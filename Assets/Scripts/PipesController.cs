@@ -29,7 +29,7 @@ public class PipesController : MonoBehaviour
 
         if (!gameState.isGameOver)
         {
-            transform.position = transform.position + ((Vector3.left * moveSpeed) * Time.deltaTime);
+            transform.position = transform.position + (Vector3.left * moveSpeed * Time.deltaTime);
         }
 
         if (gameObject.transform.position.x < deadSpace)
