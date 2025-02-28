@@ -407,6 +407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ad7665c569b24006ac36f2e552e08f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
   deadSpace: -40
-  pipeCollisionSound: {fileID: 8300000, guid: 91341297274c94fca86e450b6ac20425, type: 3}
+  baseSpeed: 5
+  maxSpeed: 100
+  speedMultiplier: 1.2

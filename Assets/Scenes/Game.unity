@@ -904,7 +904,6 @@ MonoBehaviour:
   isGameOver: 0
   deathSound: {fileID: 8300000, guid: 3bc0e5d4df6204bc8b701532607f7726, type: 3}
   scoreSound: {fileID: 8300000, guid: 2e99c5a67a94e4b08911b81e81cd5c9e, type: 3}
-  pipeCollisionSound: {fileID: 8300000, guid: 91341297274c94fca86e450b6ac20425, type: 3}
   gameMusic: {fileID: 8300000, guid: dc6babba07f1a4b62adf7e366ab57b01, type: 3}
   highScoreText: {fileID: 324905516}
 --- !u!1 &1164545088
@@ -1362,7 +1361,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PipesSpawner: {fileID: 7502390016147412517, guid: 27d8773433a83409c9a02fec97439f15, type: 3}
-  spawnTime: 4
+  baseSpawnTime: 3
+  minSpawnTime: 2
   highestOffset: 10
 --- !u!1 &1334510431
 GameObject:
