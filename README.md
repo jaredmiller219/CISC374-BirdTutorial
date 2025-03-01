@@ -24,3 +24,5 @@ Score added: <https://pixabay.com/sound-effects/coin-recieved-230517/>
 - Satisfying Checkout – Scanning items makes a beep, a red scanner beam flashes, and a receipt prints smoothly.
 
 ## Video link to game demo
+
+Game Demo: <https://youtu.be/ck0xu6LNC24>
