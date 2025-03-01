@@ -2,19 +2,19 @@
 
 This is a tutorial project used to overview Unity3D in CISC374.
 
-# References
+## References
 
-Game Music: https://pixabay.com/music/video-games-best-game-console-301284/
+Game Music: <https://pixabay.com/music/video-games-best-game-console-301284/>
 
-Character Jump: https://pixabay.com/sound-effects/cartoon-jump-6462/
+Character Jump: <https://pixabay.com/sound-effects/cartoon-jump-6462/>
 
-Score added: https://pixabay.com/sound-effects/coin-recieved-230517/
+Score added: <https://pixabay.com/sound-effects/coin-recieved-230517/>
 
-# Github Repo link
+## Github Repo link
 
-https://github.com/jaredmiller219/CISC374-BirdTutorial
+<https://github.com/jaredmiller219/CISC374-BirdTutorial>
 
-# Juicy Features
+## Juicy Features
 
 - Snappy Pick-Up – Items squash and stretch when picked up, with a small pop sound and a tiny screen shake.
 - Bouncy Drop – Items wobble or bounce when dropped, with a dust puff or ripple effect.
@@ -23,4 +23,4 @@ https://github.com/jaredmiller219/CISC374-BirdTutorial
 - Fun Customer Reactions – NPCs raise eyebrows, mutter, or gasp when you take the last item or drop something.
 - Satisfying Checkout – Scanning items makes a beep, a red scanner beam flashes, and a receipt prints smoothly.
 
-# Video link to game demo
+## Video link to game demo
