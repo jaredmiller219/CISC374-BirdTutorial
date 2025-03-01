@@ -22,3 +22,5 @@ https://github.com/jaredmiller219/CISC374-BirdTutorial
 - Lively Store Lighting – Lights flicker or dim slightly when big actions happen, and surfaces reflect movement.
 - Fun Customer Reactions – NPCs raise eyebrows, mutter, or gasp when you take the last item or drop something.
 - Satisfying Checkout – Scanning items makes a beep, a red scanner beam flashes, and a receipt prints smoothly.
+
+# Video link to game demo
