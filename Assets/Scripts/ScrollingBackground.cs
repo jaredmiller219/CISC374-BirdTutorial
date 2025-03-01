@@ -2,15 +2,25 @@ using UnityEngine;
 
 public class ScrollingBackground : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
 
-    }
+    // The speed of the scrolling
+    public float scrollSpeed;
 
-    // Update is called once per frame
+    // The reference to the GameStateManager script
+    public GameStateManager gameState;
+
+    // The renderer of the background
+    [SerializeField]
+    private Renderer backgroundRenderer;
+
     void Update()
     {
+        if (!gameState.isGameOver){
+            backgroundRenderer.material.mainTextureOffset += new Vector2(scrollSpeed * Time.deltaTime, 0);
+        }
 
+        else {
+            Destroy(gameObject);
+        }
     }
 }
